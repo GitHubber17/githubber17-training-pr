@@ -34,11 +34,11 @@ When a step contains content after the step statement, at the beginning of each 
 ```
 This is published as:
 1. This is step one.
-More content for step one.
-Even more content for step one.
+    More content for step one.
+    Even more content for step one.
 1. This is step two.
-More content for step two.
-Even more content for step two.
+    More content for step two.
+    Even more content for step two.
 1. This is step three.
 
 
@@ -57,9 +57,11 @@ In addition, a new line must be entered after each line of content to prevent th
 ```
 This is published as:
 1. This is step one.
+
     More content for step one.
     Even more content for step one.
 1. This is step two.
+
     More content for step two.
     1. This is nested step one.
     1. This is nested step two.
