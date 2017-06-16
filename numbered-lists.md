@@ -1,21 +1,40 @@
-#githubber17-training-pr
-A private (albeit public) repo for training purposes.
+# Numbered lists in markdown
 
-## MARKDOWN
+When creating numbered lists in markdown, several things must be considered:
+- The formatting style to use for the step labels
+- Whether steps will contain content in addition to the step statement
+- The amount of indentation to apply to the step contents
 
-### Numbered lists
-When creating numbered lists, you must consider:
-- The formatting style for the step labels
-- The amount of indentation for the step contents
+How you label your steps and specify indentation for step content in markdown will impact how the list is numebred and displayed when published.
 
-How step labels and content indentation are specified in markdown impacts how the list is rendered in Preview.
-
-#### Create a numbered list
-To create a numbered list in markdown, specify a number at the beginning of the step statement, such as 1, 1a, A, and so on.
-When the file is rendered in Preview, the number of steps in the list is calculated and the steps are relabled as 1, 2, 3..., according to the label style that you specified. However, there is an exception to this behavior.
+To create a numbered list in markdown, you specify a number at the beginning of the step statement, such as 1, 1a, A, and so on.
+```bash 9
+10
+11 1. This is step one.
+12 2. This is step two.
+13 3. This is step three.
+```
+When the file is published, the number of steps in the list is calculated and the steps are labled using the label style that you specified in the markdown.
+```bash 9
+10
+11 1) This is step one.
+12   1a) This is step 1a.
+13   1b) This is step 1b.
+14 2) This is step two.
+15   2a) This is step 2a.
+```
+When a step contains content in addition to the step statement, then the manner in which the step content is indented in markdown impacts whether the steps are labeled in correct numerical order when the list is published.
+```bash 9
+10
+11 A. This is step A.
+12    This is additional content for step A.
+13 B. This is step B.
+14    This is additional content for step B.
+15 C. This is step C.
+```
 
 #### Specify the step labels
-In markdown, steps can be labeled with the same numerical label, such as 1, 1, 1... or in numerical order, such as i, ii, iii, iv... However, how step labels are interpreted and subsequently rendered in Preview is impacted by how the indentation for the step contents  is specified in the markdown.
+In markdown, steps can be labeled with the same numerical label, such as 1, 1, 1... or they can be labeled in numerical order, such as i, ii, iii, iv... However, how step labels are interpreted and subsequently published is impacted by how the indentation for the step contents is specified in the markdown.
 
 #### Specify indentation for the step contents
 In markdown, step contents are indented underneath the step statement by inserting <space> characters before each line of step content. The presence of the <space> characters causes correct numerical ordering and labeling of the steps in Preview.
