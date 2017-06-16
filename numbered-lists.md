@@ -42,6 +42,7 @@ This is published as:
 1. This is step three.
 
 
+
 In addition, a new line must be entered after each line of content to prevent the content lines from being appended together in the published view.
 
 ```bash
@@ -59,15 +60,15 @@ This is published as:
 1. This is step one.
 
     More content for step one.
-    Even more content for step one.
     
+    Even more content for step one.
 1. This is step two.
 
     More content for step two.
     1. This is nested step one.
     1. This is nested step two.
-    Even more content for step two.
     
+    Even more content for step two.
 1. This is step three.
 
 
