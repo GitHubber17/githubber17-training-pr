@@ -12,23 +12,36 @@ To create a nested list, at the beginning of the line, insert _4 spaces_ before 
 20 1. This is step one.
 21     1. This is nested step one.
 22     2. This is nested step two.
-24 2. This is step two.
+23 2. This is step two.
 ```
 This is published as:
-1. One
+1. This is step one.
     1. This is nested step one.
     2. This is nested step two.
-2. Two
+2. This is step two.
     
-When a step contains content after the step statement, then at the beginning of each line, insert _4 spaces_ before you specify the content. Otherwise, the steps will not be labeled in correct numerical order when the list is published.
-```bash 9
-10
-11 i. This is step 1.
-12    This is additional content for step 1.
-13 ii. This is step 2.
-14    This is additional content for step 2.
-15 iii. This is step 3.
+When a step contains content after the step statement, at the beginning of each line, insert _4 spaces_ before you specify the content. Otherwise, the steps will not be labeled in correct numerical order when the list is published.
+```bash
+30 1. This is step one.
+31     More content for step one.
+32     Even more content for step one.
+33 2. This is step two.
+34     More content for step two.
+35     1. This is nested step one.
+36     2. This is nested step two.
+37     Even more content for step two.
+38 3. This is step three.
 ```
+This is published as:
+1. This is step one.
+    More content for step one.
+    Even more content for step one.
+2. This is step two.
+    More content for step two.
+    1. This is nested step one.
+    2. This is nested step two.
+    Even more content for step two.
+3. This is step three.
 
 ##### Example: INCORRECT, missing all indentation
 In the markdown, no <space> characters are inserted before the lines of step content.
