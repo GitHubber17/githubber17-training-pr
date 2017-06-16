@@ -21,8 +21,29 @@ This is published as:
     2. This is nested step two.
 2. This is step two.
 
-
 When a step contains content after the step statement, at the beginning of each line, insert _4 spaces_ before you specify the content. Otherwise, the steps will not be labeled in correct numerical order when the list is published.
+
+```bash
+30 1. This is step one.
+31     More content for step one.
+32     Even more content for step one.
+33 2. This is step two.
+34     More content for step two.
+35     Even more content for step two.
+36 3. This is step three.
+```
+This is published as:
+1. This is step one.
+More content for step one.
+Even more content for step one.
+1. This is step two.
+More content for step two.
+Even more content for step two.
+1. This is step three.
+
+
+In addition, a new line must be entered after each line of content to prevent the content lines from being appended together in the published view.
+
 ```bash
 30 1. This is step one.
 31     More content for step one.
@@ -44,6 +65,7 @@ This is published as:
     1. This is nested step two.
     Even more content for step two.
 1. This is step three.
+
 
 ##### Example: INCORRECT, missing all indentation
 In the markdown, no <space> characters are inserted before the lines of step content.
