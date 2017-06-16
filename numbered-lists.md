@@ -1,3 +1,4 @@
+
 THIS TOPIC IS UNDER CONSTRUCTION
 
 # Numbered lists in markdown
@@ -9,7 +10,8 @@ To create a numbered list, specify a number (with a period) at the beginning of 
 ```
 To create a nested list, at the beginning of the line, insert _4 spaces_ before you specify the number:
 ```bash
-20 1. This is step one.21     1. This is nested step one.
+20 1. This is step one.
+21     1. This is nested step one.
 22     2. This is nested step two.
 23 2. This is step two.
 ```
@@ -34,19 +36,14 @@ When a step contains content after the step statement, at the beginning of each 
 ```
 This is published as:
 1. This is step one.
-
     More content for step one.
-    
     Even more content for step one.
-2. This is step two.
-
+1. This is step two.
     More content for step two.
-    
     1. This is nested step one.
-    2. This is nested step two.
-    
+    1. This is nested step two.
     Even more content for step two.
-3. This is step three.
+1. This is step three.
 
 ##### Example: INCORRECT, missing all indentation
 In the markdown, no <space> characters are inserted before the lines of step content.
