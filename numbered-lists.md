@@ -1,13 +1,32 @@
 THIS TOPIC IS UNDER CONSTRUCTION
 
 # Numbered lists in markdown
-To create a numbered list in markdown, you specify a number at the beginning of the step statement:
-```bash 9
-10
-11 1. This is step one.
-12 2. This is step two.
-13 3. This is step three.
+To create a numbered list in markdown, specify a number (with a period) at the beginning of the line:
+```bash
+ 9 // In markdown, create a numbered list:
+10 1. This is step one.
+11 2. This is step two.
+12 3. This is step three.
 ```
+To create a nested list in markdown, insert 4 spaces at the beginning of the line, then specify a number or roman numeral (with a period) :
+```bash
+19 // In markdown, create a nested numbered list:
+20 1. This is step one.
+21    1. This is sub-step one.
+22    2. This is sub-step two.
+23    3. This is sub-step three.
+24    4. This is sub-step four.
+25 2. This is step two.
+```
+This is published as:
+1. One
+    i. one
+    ii. two
+    iii. three
+    iv. four
+2. Two
+    
+How you label your steps impacts how the list is numbered and displayed when published.
 
 How you label your steps and specify indentation for step content in markdown impacts how the list is numbered and displayed when published.
 
@@ -15,14 +34,7 @@ When the file is published, the number of steps in the list is calculated and th
 1)
 2)
 3)
-```bash 9
-10
-11 1) This is step one.
-12    i) This is step 1a.
-13    ii) This is step 1b.
-14 2) This is step two.
-15    i) This is step 2a.
-```
+
 When a step contains content in addition to the step statement, then the manner in which the step content is indented in markdown impacts whether the steps are labeled in correct numerical order when the list is published.
 ```bash 9
 10
