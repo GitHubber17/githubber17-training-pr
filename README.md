@@ -7,6 +7,7 @@ A private (albeit public) repo for training purposes.
 When creating numbered lists, you must consider:
 - The formatting style for the step labels
 - The amount of indentation for the step contents
+
 How step labels and content indentation are specified in markdown impacts how the list is rendered in Preview.
 
 To create a numbered list in markdown, specify a number at the beginning of the step statement, such as 1, 1a, A, and so on.
