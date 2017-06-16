@@ -25,12 +25,16 @@ When a step contains content after the step statement, at the beginning of each 
 
 ```bash
 30 1. This is step one.
-31     More content for step one.
-32     Even more content for step one.
-33 2. This is step two.
-34     More content for step two.
-35     Even more content for step two.
-36 3. This is step three.
+31
+32     More content for step one.
+33
+34     Even more content for step one.
+35 2. This is step two.
+36
+37     More content for step two.
+38
+39     Even more content for step two.
+40 3. This is step three.
 ```
 This is published as:
 1. This is step one.
@@ -47,14 +51,18 @@ In addition, a new line must be entered after each line of content to prevent th
 
 ```bash
 30 1. This is step one.
-31     More content for step one.
-32     Even more content for step one.
-33 2. This is step two.
-34     More content for step two.
-35     1. This is nested step one.
-36     2. This is nested step two.
-37     Even more content for step two.
-38 3. This is step three.
+31
+32     More content for step one.
+33
+34     Even more content for step one.
+35 2. This is step two.
+36
+37     More content for step two.
+38     1. This is nested step one.
+39     2. This is nested step two.
+40
+41     Even more content for step two.
+42 3. This is step three.
 ```
 This is published as:
 1. This is step one.
