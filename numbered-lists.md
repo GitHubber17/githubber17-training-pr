@@ -8,7 +8,7 @@ To create a numbered list in markdown, specify a number (with a period) at the b
 11 2. This is step two.
 12 3. This is step three.
 ```
-To create a nested list in markdown, insert 4 spaces at the beginning of the line, then specify a number or roman numeral (with a period) :
+To create a nested list in markdown, at the beginning of the line, insert 4 spaces before you specify a number (with a period):
 ```bash
 19 // In markdown, create a nested numbered list:
 20 1. This is step one.
